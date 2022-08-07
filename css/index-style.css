@@ -309,6 +309,7 @@ nav a:hover {
     .logo img{
         width: 100%;
     }
+    
 
     .logo i{
         display: none;
@@ -319,6 +320,9 @@ nav a:hover {
         display: grid;
         grid-template-columns: auto auto auto auto;
         justify-self: end;
+    }
+    .imagen{
+        display: none;
     }
 
     .menu-hr{
@@ -357,7 +361,10 @@ nav a:hover {
         justify-content: space-between;
         background-color: var(--negro2);
     }
-    
+   
+    .imagen{
+        display: block;
+    }
     .logo{
         padding: 1rem;
     }
