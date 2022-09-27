@@ -35,7 +35,7 @@ nav{
     font-size: 1.3em;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 
 nav a {
@@ -81,7 +81,7 @@ nav a:hover {
     grid-area: menu;
     display: grid;
     background-color: rgb(1, 10, 52, 0.838);
-    /*display: none*/;
+    /*display: none;*/
 }
 
 .menu-hr{
@@ -94,22 +94,49 @@ nav a:hover {
     padding: 1rem 0;
 }
 
+.carousel{
+    margin-top: 80px;
+}
+#carouselExampleCaptions{
+    width: 100%;
+}
+
+.reservar{
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    top: 47%;
+}
+
+.reservar button{
+    background-color: #9C2759;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    height: 250px;
+}
+.reservar p{
+    color: #fff;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin: 0;
+    font-size: 25px;
+  }
+
 #nosotros{
     display: flex;
     width: 100%;
     height: auto;
-    justify-content: space-around;
     align-items: center;
-    padding: 70px 20px;
+    padding: 10% 5%;
 }
 
 .texto{
-    width: 50%;
     font-size: 1.2em;
 }
-.imagen{
 
-    width: 200px;
+.imagen{
+    display: none;
 }
 
 #features{
@@ -131,12 +158,17 @@ nav a:hover {
     justify-content: space-around;
 }
 
+#features p{
+    width: 100%;
+    text-align: center;
+}
+
 .feature{
-    width: 25%;
-    min-width: 180px;
+    width: 20%;
+    min-width: 160px;
     max-width: 230px;
     margin: 0.8rem;
-    padding: 1rem;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,12 +200,18 @@ nav a:hover {
 
 #ubicanos h2{
     font-size: 50px;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 #ubicanos div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#ubicanos h4{
     margin: auto;
     width: 70%;
+    font-weight: bold;
 }
 
 .ubicanos-hr{
@@ -187,31 +225,30 @@ nav a:hover {
 }
 
 #puntuacion{
-    height: 30vh;
     width: 100%;
-    padding: 50px;
+}
+
+.titulo{
     background-color: var(--negro2);
+    height: 200px;
+    padding: 20px 0;
 }
 
 #puntuacion h1{
     text-align: center;
     color: var(--blanco);
-    font-size: 50px;
-    height: 130px;
+    font-size: 45px;
 }
 
 .cards{
-    font-size: 10px;
-    flex-flow: wrap;
-    width: 100%;
-    height: auto;
+    margin-top: -50px;
+    gap: 0px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-around;
-    color: var(--blanco);
-    
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
 .cards .card{
@@ -219,81 +256,81 @@ nav a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    border: none;
-    width: 380px;
-    border-radius: 2px;
-    margin: -40px 0 0 0;
-    text-align: center;
+    width: 25%;
+    min-width: 300px;
+    max-width: 230px;
+    margin: 0.8rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    border-radius: 5px;
+}
+
+.tstars{
     display: flex;
-}
-
-.cards .card h4{
-    margin-top: -70px;
-    display: flex;
-}
-
-.cards .card p{
-    padding: 0 30px;
-    margin-top: 60px;
-    font-size: 16px;
-    font-weight: 300;
-    text-align:start;
-}
-
-.cards .card i{
-    font-size: 18px;
-}
-
-.cards .card .stars{
-    width: 110px;
-    display: flex;
-    flex-wrap: wrap;
+    gap: 25px;
     align-items: center;
-    justify-content: space-between;
 }
 
-.cards .card .border-img{
-    box-sizing: border-box;
-    width: 80px;
-    height: 80px;
-    margin-top: 30px;
-    margin-right: 270px;
+.border-img{
     border-radius: 50%;
+    width: 80px;
+    
 }
 
-.white{
+.name p{
+    font-size: 23px;
+    margin: 0;
+}
+
+.stars{
+    display: flex;
+    gap: 10px;
+}
+
+.name i{
+    font-size: 20px;
+}
+
+.te{
     width: 100%;
-    height: 300px;
-    background-color: var(--blanco);
+    margin-top: 30px;
+    font-size: 20px;
 }
 
 .pie-pagina{
+    margin-top: 40px;
     background-color: var(--negro2);
-    color: var(--blanco);
+    padding: 20px 30px;
+    color: #fff;
+}
+
+.grupo-1 i{
+    display: none;
+}
+
+.grupo-3{
     display: flex;
-    justify-content: space-between;
 }
 
-.pie-pagina .grupo-1{
-    width: 500px;
-    padding: 30px 100px;
-}
-
-.pie-pagina .grupo-2{
-    padding: 30px 50px;
-}
-
-.pie-pagina .grupo-3{
-    width: 400px;
-    padding: 30px 80px;
-}
-
-.pie-pagina i{
-    padding: 0px 30px;
-    width: 30px;
+.grupo-4 i{
     font-size: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
 }
+
+.foot-hr{
+    margin: 0 auto;
+    width: 100%;
+    opacity: 0.8;
+    border: none;
+    background-color: var(--gris);
+    justify-self: center;
+    height: 2px;
+}
+
 
 
 /*Resolución tabletas*/
@@ -309,7 +346,6 @@ nav a:hover {
     .logo img{
         width: 100%;
     }
-    
 
     .logo i{
         display: none;
@@ -320,9 +356,6 @@ nav a:hover {
         display: grid;
         grid-template-columns: auto auto auto auto;
         justify-self: end;
-    }
-    .imagen{
-        display: none;
     }
 
     .menu-hr{
@@ -361,10 +394,7 @@ nav a:hover {
         justify-content: space-between;
         background-color: var(--negro2);
     }
-   
-    .imagen{
-        display: block;
-    }
+    
     .logo{
         padding: 1rem;
     }
@@ -389,7 +419,70 @@ nav a:hover {
     .navbar-button{
          background-color:var(--azuloscuro);
         }
+
+    .imagen{
+        display: flex;
+        width: 35vh;
     }
+
+    #nosotros{
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .texto{
+        width: 70%;
+    }
+
+    .cards .card{
+    width: 30%;
+    height: 300px;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0.8rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    }
+
+    .foot-hr{
+        display: none;
+    }
+
+    .pie-pagina{
+        background-color: var(--negro2);
+        color: var(--blanco);
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .pie-pagina .grupo-1{
+        width: 35%;
+        padding: 0 20px;
+    }
+    
+    .pie-pagina .grupo-2{
+        padding: 0px 50px;
+    }
+    
+    .pie-pagina .grupo-3{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pie-pagina .grupo-4{
+        display: none;
+    }
+    
+    .pie-pagina i{
+        display: inline-flex;
+        padding: 0px 30px;
+        width: 30px;
+        font-size: 20px;
+    }
+}
 
     /*Resolución notebooks*/
 @media screen and (min-width: 1308px){

@@ -136,15 +136,11 @@ img{
 
 @media screen and (min-width:1024px){
 
-    html{
-        height: 100%;
-    }
     .body{
         display: grid;
         grid-template:
         "header formulario" 100% /
           30% auto; 
-        height: 100%;
     }
 
     .header{
@@ -216,7 +212,6 @@ img{
     }
 
     .footer{
-        margin-top: 100px;
         display: flex;
         flex-direction: column;
     }

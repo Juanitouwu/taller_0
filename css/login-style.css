@@ -20,7 +20,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/dormitorio.webp);
+    background-image: url(../img/login/bg-login.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -40,7 +40,7 @@ h1,h2,h3,h4,h5{
 }
 
 
-.form{
+#form{
     text-shadow: 1px 1px 1px #000;
     color: #fff;
     display: flex;
@@ -49,12 +49,12 @@ h1,h2,h3,h4,h5{
     width: 350px;
     align-items: center;
     margin: auto;
-    background-color: rgba(76, 140, 192, 0.85);
     border-radius: 3px;
     font-size: 18px;
+    background-color: rgba(55, 119, 172, 0.8);
 }
 
-.form .svg{
+.vector{
     width: 100%;
 }
 
@@ -85,21 +85,20 @@ h1,h2,h3,h4,h5{
     box-shadow: 1px 1px 1px #0B3860;
     float: inline-start;
     height: 30px;
-    width: 65%;
+    width: 70%;
     border: none;
     outline: none;
     border-radius: 2px;
-    background-color: #fff;
     color: #fff;
 }
 
-.form label{
-    width: 65%;
+#form label{
+    width: 70%;
     margin-top: 20px;
 }
 #submit{
     margin-top: 45px;
-    width: 65%;
+    width: 70%;
     height: 30px;
     background-color: var(--negro2);
     color: #fff;
@@ -108,20 +107,20 @@ h1,h2,h3,h4,h5{
     justify-content: center;
 }
 
-.form p{
+#form p{
     display: none;
     margin-top: 10px;
     font-size: 14px;
 }
 
-.form a{
+#form a{
     color: #000;
     text-decoration: none;
 }
 
 @media screen and (min-width: 1024px){
 
-    .form p{
+    #form p{
         display: block;
     }
 }
